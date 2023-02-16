@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--以上为导航base-->
+
+<div class="banner-carousel banner-carousel-2 mb-0">
+  <div class="banner-carousel-item" style="background-image:url('../static/images/carousel_2.jpeg')">
+    <div class="container">
+        <div class="box-slider-content">
+          <div class="box-slider-text">
+              <h3 class="box-slide-sub-title">不知道选择哪家咖啡店？</h3>
+              <p class="box-slide-description">你的时间很宝贵！工作日的午休，难得休息的周末下午。<br>纠结选店？不如看看我们的推荐！</p>
+              <p>
+                <a href="/everydayshop" class="slider btn btn-primary">发现甄选好店</a>
+              </p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="banner-carousel-item" style="background-image:url('../static/images/carousel_1.jpg')">
+    <div class="slider-content text-left">
+        <div class="container">
+          <div class="box-slider-content">
+              <div class="box-slider-text">
+                <h3 class="box-slide-sub-title">想要购买划算上品的咖啡豆？</h3>
+                <p class="box-slide-description">你的时间很宝贵！浏览器的不停翻页，购物车又加了个遍。<br>犹豫买豆？不如让我们为你加购！</p>
+                <p><a href="/coffeebean" class="slider btn btn-primary" aria-label="about-us">浏览甄选好豆</a></p>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<section class="call-to-action no-padding">
+  <div class="container">
+    <div class="action-style-box">
+        <div class="row">
+          <div class="col-md-8 text-center text-md-left">
+              <div class="call-to-action-text">
+                <h3 class="action-title">你的需求？我们都懂！成为会员尊享入会礼及专属折扣</h3>
+              </div>
+          </div><!-- Col end -->
+          <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+              <div class="call-to-action-btn">
+                <a class="btn btn-primary" href="/register">立即注册</a>
+              </div>
+          </div><!-- col end -->
+        </div><!-- row end -->
+    </div><!-- Action style box -->
+  </div><!-- Container end -->
+</section><!-- Action end -->
+
+<section id="ts-features" class="ts-features pb-2">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="ts-service-box">
+              <div class="ts-service-image-wrapper">
+                <img loading="lazy" class="w-100" src="../static/images/services/Americano.jpeg" alt="service-image">
+              </div>
+              <div class="d-flex">
+             <!-- 删除历史 -->
+                <div class="ts-service-info">
+                    <h3 class="service-box-title"><a href="/selectcoffeeshop">美式咖啡 Caffè Americano</a></h3>
+                    <p>以欧洲方式调制，结合经典浓缩咖啡及热水，带来浓郁丰富的咖啡滋味。</p>
+                    <a class="learn-more d-inline-block" href="/selectcoffeeshop" aria-label="service-details"><i class="fa fa-caret-right"></i> 搜索店铺</a>
+                </div>
+              </div>
+          </div><!-- Service1 end -->
+        </div><!-- Col 1 end -->
+
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="ts-service-box">
+              <div class="ts-service-image-wrapper">
+                <img loading="lazy" class="w-100" src="../static/images/services/Cappuccino.jpeg" alt="service-image">
+              </div>
+              <div class="d-flex">
+                <!-- 删除历史 -->
+                <div class="ts-service-info">
+                    <h3 class="service-box-title"><a href="/selectcoffeeshop">卡布奇诺 Cappuccino</a></h3>
+                    <p>用蒸煮牛奶与浓缩咖啡相融合，丰厚绵密的奶泡覆顶，再撒上肉桂或可可粉。</p>
+                    <a class="learn-more d-inline-block" href="/selectcoffeeshop" aria-label="service-details"><i class="fa fa-caret-right"></i> 搜索店铺</a>
+                </div>
+              </div>
+          </div><!-- Service2 end -->
+        </div><!-- Col 2 end -->
+
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="ts-service-box">
+              <div class="ts-service-image-wrapper">
+                <img loading="lazy" class="w-100" src="../static/images/services/Flat White.jpeg" alt="service-image">
+              </div>
+              <div class="d-flex">
+                <!-- 删除历史 -->
+                <div class="ts-service-info">
+                    <h3 class="service-box-title"><a href="/selectcoffeeshop">馥芮白 Flat-white</a></h3>
+                    <p>选用精萃浓缩咖啡制成，融合绵密奶泡，风味更浓郁和甘甜。</p>
+                    <a class="learn-more d-inline-block" href="/selectcoffeeshop" aria-label="service-details"><i class="fa fa-caret-right"></i> 搜索店铺</a>
+                </div>
+              </div>
+          </div><!-- Service3 end -->
+        </div><!-- Col 3 end -->
+    </div><!-- Content row end -->
+  </div><!-- Container end -->
+</section><!-- Feature are end -->
+
+
+{% endblock %}

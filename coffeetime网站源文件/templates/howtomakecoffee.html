@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--以上为导航base-->
+
+<div id="banner-area" class="banner-area" style="background-image:url(../static/images/banner/banner4.png)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">如何制作咖啡?</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="/">主页</a></li>
+                      <li class="breadcrumb-item"><a href="/about">关于我们</a></li>
+                    </ol>
+                </nav>
+              </div>
+          </div><!-- Col end -->
+        </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div><!-- Banner text end -->
+</div><!-- Banner area end -->
+
+<section id="news" class="news">
+  <div class="container">
+    <div class="row text-center">
+        <div class="col-12">
+          <h2 class="section-title">熟能生巧</h2>
+          <h3 class="section-sub-title">最新咖啡手记</h3>
+        </div>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="latest-post">
+              <div class="latest-post-media">
+                <a href="/journaldetails" class="latest-post-img">
+                    <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_1.jpg')}}" alt="img">
+                </a>
+              </div>
+              <div class="post-body">
+                <h4 class="post-title">
+                    <a href="/journaldetails" class="d-inline-block">从豆子到咖啡，你需要的咖啡知识都在这里</a>
+                </h4>
+                <div class="latest-post-meta">
+                    <span class="post-item-date">
+                      <i class="fa fa-clock-o"></i> 6 月 20 日,  2021
+                    </span>
+                </div>
+              </div>
+          </div><!-- Latest post end -->
+        </div><!-- 1st post col end -->
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="latest-post">
+              <div class="latest-post-media">
+                <a href="/journaldetails" class="latest-post-img">
+                    <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_2.jpg')}}" alt="img">
+                </a>
+              </div>
+              <div class="post-body">
+                <h4 class="post-title">
+                    <a href="/journaldetails" class="d-inline-block">冷萃咖啡的做法 | 最懒的人也能成功的秘诀</a>
+                </h4>
+                <div class="latest-post-meta">
+                    <span class="post-item-date">
+                      <i class="fa fa-clock-o"></i> 11 月 8 日,  2021
+                    </span>
+                </div>
+              </div>
+          </div><!-- Latest post end -->
+        </div><!-- 2nd post col end -->
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="latest-post">
+              <div class="latest-post-media">
+                <a href="/journaldetails" class="latest-post-img">
+                    <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_3.jpg')}}" alt="img">
+                </a>
+              </div>
+              <div class="post-body">
+                <h4 class="post-title">
+                    <a href="/journaldetails" class="d-inline-block">新手必看！咖啡豆如何选？咖啡豆种类产地介绍大揭秘</a>
+                </h4>
+                <div class="latest-post-meta">
+                    <span class="post-item-date">
+                      <i class="fa fa-clock-o"></i> 12 月 25 日,  2021
+                    </span>
+                </div>
+              </div>
+          </div><!-- Latest post end -->
+        </div><!-- 3rd post col end -->
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="latest-post">
+            <div class="latest-post-media">
+              <a href="/journaldetails" class="latest-post-img">
+                  <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_5.jpg')}}" alt="img">
+              </a>
+            </div>
+            <div class="post-body">
+              <h4 class="post-title">
+                  <a href="/journaldetails" class="d-inline-block">手冲咖啡技巧｜新手简单一招令咖啡升华</a>
+              </h4>
+              <div class="latest-post-meta">
+                  <span class="post-item-date">
+                    <i class="fa fa-clock-o"></i> 1 月 12 日,  2022
+                  </span>
+              </div>
+            </div>
+        </div><!-- Latest post end -->
+      </div><!-- 1st post col end -->
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="latest-post">
+            <div class="latest-post-media">
+              <a href="/journaldetails" class="latest-post-img">
+                  <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_4.jpg')}}" alt="img">
+              </a>
+            </div>
+            <div class="post-body">
+              <h4 class="post-title">
+                  <a href="/journaldetails" class="d-inline-block">不用咖啡机,在家也能冲泡好喝的拿铁咖啡</a>
+              </h4>
+              <div class="latest-post-meta">
+                  <span class="post-item-date">
+                    <i class="fa fa-clock-o"></i> 3 月 28 日,  2022
+                  </span>
+              </div>
+            </div>
+        </div><!-- Latest post end -->
+      </div><!-- 2nd post col end -->
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="latest-post">
+            <div class="latest-post-media">
+              <a href="/journaldetails" class="latest-post-img">
+                  <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_6.jpg')}}" alt="img">
+              </a>
+            </div>
+            <div class="post-body">
+              <h4 class="post-title">
+                  <a href="/journaldetails" class="d-inline-block">咖啡、甜点“搭配学”！不同甜点，该配哪杯咖啡?</a>
+              </h4>
+              <div class="latest-post-meta">
+                  <span class="post-item-date">
+                    <i class="fa fa-clock-o"></i> 8 月 9 日,  2022
+                  </span>
+              </div>
+            </div>
+        </div><!-- Latest post end -->
+      </div><!-- 3rd post col end -->
+  </div>
+    <!--/ Content row end -->
+
+    <div class="general-btn text-center mt-4">
+        <a class="btn btn-primary" href="#">查看所有</a>
+    </div>
+
+  </div>
+  <!--/ Container end -->
+</section>
+<!--/ News end -->
+
+
+
+
+ {% endblock %}

@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--以上为导航base-->
+<div id="banner-area" class="banner-area" style="background-image:url(../static/images/banner/banner4.png)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">离我最近</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="/">主页</a></li>
+                      <li class="breadcrumb-item"><a href="/about">关于我们</a></li>
+                    </ol>
+                </nav>
+              </div>
+          </div><!-- Col end -->
+        </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div><!-- Banner text end -->
+</div><!-- Banner area end -->
+
+<section id="main-container" class="main-container">
+  <div class="container">
+
+    <div class="gap-60"></div>
+
+    <div class="row text-center">
+      <div class="col-12">
+        <h3 class="section-sub-title"> 📍在地图上点选你要搜寻的位置</h3>
+      </div>
+    </div>
+
+
+    <!-- map -->
+
+   <div class="container">
+            <br><br>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mx-auto">
+                    <!--<iframe src="https://m.amap.com/share/index/lnglat=%E7%BB%8F%E5%BA%A6,%E7%BA%AC%E5%BA%A6&name=%E6%88%91%E7%9A%84%E4%BD%8D%E7%BD%AE&src=uriapi&innersrc=uriapi" frameborder="0" scrolling="no" style="width:100%; height:600px;"></iframe>-->
+                    <iframe src="https://map.baidu.com/search/%E4%B8%8A%E6%B5%B7%E5%B8%82/@13523299,3641066,12z?querytype=s&da_src=shareurl&wd=%E4%B8%8A%E6%B5%B7%E5%B8%82&c=289&src=0&pn=0&sug=0&l=12&b=(13478211,3616970;13568387,3665162)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&device_ratio=2" frameborder="0" scrolling="no" style="width:100%; height:600px;"></iframe>
+                </div>
+            </div>
+     </div>
+
+    <div class="gap-40"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <!--以下为foodwagon tamplate粘贴而来-->
+        <section id="testimonial">
+          <div class="container">
+            <div class="row h-100">
+              <div class="col-lg-7 mx-auto text-center mb-6">
+                <h3 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">共筛选出"47"家附近的咖啡店</h3>
+              </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{{url_for('static', filename='images/manner_coffee_logo.jpeg')}}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Manner Coffee <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><span class="material-symbols-outlined" >favorite</span></a></h5>
+
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title fs-5" id="exampleModalLabel">收藏店铺</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="collectionsucess">收藏成功！</p >
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">关闭</button>
+                              <a href="/myfavorite"><button type="button" class="btn btn-primary close-button">查看收藏</button></a >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      <p class="card-text">⭐4.7  人均:<span class="text-information">¥20</span>  评价:<span class="text-information">2349</span>条 <br>地址：上海市长宁区金钟路凌空soho2号楼</p>
+                      <p class="card-text"><div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">购买优惠券</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{{url_for('static', filename='images/starbucks_coffee_logo.png')}}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Starbucks Coffee（南京西路店）<a data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><span class="material-symbols-outlined" >favorite</span></a></h5>
+
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title fs-5" id="exampleModalLabel">收藏店铺</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="collectionsucess">收藏成功！</p >
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">关闭</button>
+                              <a href="/myfavorite"><button type="button" class="btn btn-primary close-button">查看收藏</button></a >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      <p class="card-text">⭐4.7  人均:<span class="text-information">¥29</span>  评价:<span class="text-information">2831</span>条 <br>地址：上海市静安区南京西路1376号</p>
+                      <p class="card-text"><div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">购买优惠券</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{{url_for('static', filename='images/seesaw_coffee_logo.png')}}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Seesaw Coffee（愚园路店）<a data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><span class="material-symbols-outlined" >favorite</span></a></h5>
+
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title fs-5" id="exampleModalLabel">收藏店铺</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="collectionsucess">收藏成功！</p >
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">关闭</button>
+                              <a href="/myfavorite"><button type="button" class="btn btn-primary close-button">查看收藏</button></a >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                      <p class="card-text">⭐4.7  人均:<span class="text-information">¥31</span>  评价:<span class="text-information">2339</span>条 <br>地址：上海市静安区愚园路433号</p>
+                      <p class="card-text"><div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">购买优惠券</button></p>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{{url_for('static', filename='images/luckin_coffeee_logo.jpeg')}}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Luckin Coffee（日月光总部店）<a data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><span class="material-symbols-outlined" >favorite</span></a></h5>
+
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title fs-5" id="exampleModalLabel">收藏店铺</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p class="collectionsucess">收藏成功！</p >
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">关闭</button>
+                              <a href="/myfavorite"><button type="button" class="btn btn-primary close-button">查看收藏</button></a >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                      <p class="card-text">⭐4.7  人均:<span class="text-information">¥23</span>  评价:<span class="text-information">1478</span>条 <br>地址：上海市浦东新区盛夏路169号一层18B室</p>
+                      <p class="card-text"><div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">购买优惠券</button> </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-center mt-5"> <a class="btn btn-lg btn-primary" href="/selectcoffeeshop">查看更多 <i class="fas fa-chevron-right ms-2"> </i></a></div>
+            </div>
+          </div>
+        </section>
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+{% endblock %}

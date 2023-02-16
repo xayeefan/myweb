@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!--以上为导航base-->
+<div id="banner-area" class="banner-area" style="background-image:url(../static/images/banner/banner4.png)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">关于我们</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="/">主页</a></li>
+                      <li class="breadcrumb-item"><a href="/pricing">会员体系</a></li>
+                    </ol>
+                </nav>
+              </div>
+          </div><!-- Col end -->
+        </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div><!-- Banner text end -->
+</div><!-- Banner area end -->
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+          <h3 class="column-title">我们是谁？</h3>
+          <p>Coffee Time发家自上海，致力于将精品咖啡带入每个人的优质生活。</p>
+          <blockquote><p>“好的创意始于头脑风暴。伟大的想法从咖啡开始.”</p></blockquote>
+          <p>我们深知劳碌工作的您需要咖啡相伴，也希望为您甄选优惠与好店的我们，能始终与您相伴。</p>
+
+        </div><!-- Col end -->
+
+        <div class="col-lg-6 mt-5 mt-lg-0">
+
+          <div id="page-slider" class="page-slider small-bg">
+
+              <div class="item" style="background-image:url(../static/images/about/about_3.jpg)">
+                <div class="container">
+                    <div class="box-slider-content">
+                      <div class="box-slider-text">
+                          <h2 class="box-slide-title">沪上咖啡</h2>
+                      </div>
+                    </div>
+                </div>
+              </div><!-- Item 1 end -->
+
+              <div class="item" style="background-image:url(../static/images/about/about_1.png)">
+                <div class="container">
+                    <div class="box-slider-content">
+                      <div class="box-slider-text">
+                          <h2 class="box-slide-title">甄心为您</h2>
+                      </div>
+                    </div>
+                </div>
+              </div><!-- Item 1 end -->
+
+          </div><!-- Page slider end-->
+
+
+        </div><!-- Col end -->
+    </div><!-- Content row end -->
+
+  </div><!-- Container end -->
+</section><!-- Main container end -->
+
+
+<section class="subscribe no-padding">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+          <div class="subscribe-call-to-acton">
+              <h3>需要我们的帮助？</h3>
+              <h4>(021) 8627-5371</h4>
+          </div>
+        </div><!-- Col end -->
+
+        <div class="col-lg-8">
+          <div class="ts-newsletter row align-items-center">
+              <div class="col-md-5 newsletter-introtext">
+                <h4 class="text-white mb-0">登记订阅最新优惠信息</h4>
+                <p class="text-white">更多咖啡知识，咖啡店介绍，优惠详情，我们会电邮通知您</p>
+              </div>
+
+              <div class="col-md-7 newsletter-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="newsletter-email" class="content-hidden">邮箱地址</label>
+                      <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="输入电邮并回车确认" autocomplete="off">
+                    </div>
+                </form>
+              </div>
+          </div><!-- Newsletter end -->
+        </div><!-- Col end -->
+
+    </div><!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<!--/ subscribe end -->
+
+<section id="news" class="news">
+  <div class="container">
+    <div class="row text-center">
+        <div class="col-12">
+          <h2 class="section-title">熟能生巧</h2>
+          <h3 class="section-sub-title">最新咖啡手记</h3>
+        </div>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="latest-post">
+              <div class="latest-post-media">
+                <a href="news-single.html" class="latest-post-img">
+                    <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_1.jpg')}}" alt="img">
+                </a>
+              </div>
+              <div class="post-body">
+                <h4 class="post-title">
+                    <a href="news-single.html" class="d-inline-block">从豆子到咖啡，你需要的咖啡知识都在这里</a>
+                </h4>
+                <div class="latest-post-meta">
+                    <span class="post-item-date">
+                      <i class="fa fa-clock-o"></i> 6 月 20 日,  2022
+                    </span>
+                </div>
+              </div>
+          </div><!-- Latest post end -->
+        </div><!-- 1st post col end -->
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="latest-post">
+              <div class="latest-post-media">
+                <a href="news-single.html" class="latest-post-img">
+                    <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_2.jpg')}}" alt="img">
+                </a>
+              </div>
+              <div class="post-body">
+                <h4 class="post-title">
+                    <a href="news-single.html" class="d-inline-block">冷萃咖啡的做法 | 最懒的人也能成功的秘诀</a>
+                </h4>
+                <div class="latest-post-meta">
+                    <span class="post-item-date">
+                      <i class="fa fa-clock-o"></i> 11 月 8 日,  2022
+                    </span>
+                </div>
+              </div>
+          </div><!-- Latest post end -->
+        </div><!-- 2nd post col end -->
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="latest-post">
+              <div class="latest-post-media">
+                <a href="news-single.html" class="latest-post-img">
+                    <img loading="lazy" class="img-fluid" src="{{url_for('static', filename='images/journals/journal_3.jpg')}}" alt="img">
+                </a>
+              </div>
+              <div class="post-body">
+                <h4 class="post-title">
+                    <a href="news-single.html" class="d-inline-block">新手必看！咖啡豆如何选？咖啡豆种类产地介绍大揭秘</a>
+                </h4>
+                <div class="latest-post-meta">
+                    <span class="post-item-date">
+                      <i class="fa fa-clock-o"></i> 12 月 25 日,  2022
+                    </span>
+                </div>
+              </div>
+          </div><!-- Latest post end -->
+        </div><!-- 3rd post col end -->
+    </div>
+    <!--/ Content row end -->
+
+    <div class="general-btn text-center mt-4">
+        <a class="btn btn-primary" href="news-left-sidebar.html">查看所有</a>
+    </div>
+
+  </div>
+  <!--/ Container end -->
+</section>
+<!--/ News end -->
+
+{% endblock %}

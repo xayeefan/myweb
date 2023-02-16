@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--以上为导航base-->
+<div id="banner-area" class="banner-area" style="background-image:url(../static/images/banner/banner4.png)">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">咖啡手记</h1>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="/">主页</a></li>
+                    <li class="breadcrumb-item"><a href="/about">关于我们</a></li>
+                  </ol>
+                </nav>
+              </div>
+          </div><!-- Col end -->
+        </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div><!-- Banner text end -->
+</div><!-- Banner area end -->
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-8 mb-5 mb-lg-0">
+
+        <div class="post-content post-single">
+          <div class="post-media post-image">
+            <img loading="lazy" src="{{url_for('static', filename='images/journals/journal_1.jpg')}}" class="img-fluid" alt="post-image">
+          </div>
+
+          <div class="post-body">
+            <div class="entry-header">
+              <div class="post-meta">
+                <span class="post-author">
+                  <i class="far fa-user"></i><a href="#"> 石磊</a>
+                </span>
+                <span class="post-cat">
+                  <i class="far fa-folder-open"></i><a href="#"> 咖啡豆</a>
+                </span>
+                <span class="post-meta-date"><i class="far fa-calendar"></i> 6 月 20 日,  2021</span>
+                <span class="post-comment"><i class="far fa-comment"></i> 29<a href="#"
+                    class="comments-link">评论</a></span>
+              </div>
+              <h2 class="entry-title">
+                从豆子到咖啡，你需要的咖啡知识都在这里
+              </h2>
+            </div><!-- header end -->
+
+            <div class="entry-content">
+              <p>不知从什么时候开始，咖啡便成了很多人生活的必需品，早晨用来提神醒脑，下午用来消遣怡情，晚上用来熬夜通宵……</p>
+
+              <p>虽然常常喝咖啡，但是很多人到了咖啡馆里还是犯了难。不管是喝咖啡还是买咖啡豆，各种各样的资料信息、冲煮方式简直不知从何选起。这些眼花缭乱品种产地、制作工艺、冲煮方式，自然与咖啡的风味息息相关。</p>
+              <p>关于咖啡，我们这次先来讲讲一颗豆子是如何变成一杯咖啡的。 </p>
+
+              <p><b><u>01 | 咖啡豆的处理方式</u></b></p>
+              <p>挑选咖啡豆时，常常能看到咖啡豆标签上的各种信息，日晒、水洗；深烘、前烘；中度研磨、极细研磨等等等等。虽然字面上就能大致理解其中的工艺，但是每一种处理工艺都会为咖啡带来意想不到的风味。 </p>
+              <img src="{{url_for('static', filename='images/journals/journal_detail_01.jpeg')}}" alt="">
+              <p>对于深褐色的整粒咖啡豆，想必大家已经不能更熟悉了，然而，咖啡的果实却很少被人熟知。鲜亮的红色，是成熟咖啡果实的标识。因此，在手工采摘时，人们可以轻松分辨出咖啡的成熟度。 </p>
+              <p>咖啡的果实会在采摘后经行生豆的精制加工，包裹剔除果肉、烘干生豆等一系列处理。虽然只是农场最为初级的加工，但是知道这些对你选择口味合适的咖啡很有帮助。</p>
+              <img src="{{url_for('static', filename='images/journals/journal_detail_02.png')}}" alt="">
+              <p>红色的咖啡果肉其实可以食用，甚至有着类似蜜瓜的风味，十分香甜。 </p>
+              <p>常见的生豆处理方式有<b>日晒处理法</b>、<b>水洗处理法</b>以及<b>混合处理法</b>。</p>
+              <p><b>日晒处理法：</b>最古老的咖啡生豆处理方式，其实就是成熟的咖啡果实经过日晒干燥之后再剔除果皮。通过日晒处理的生豆通常会增加一些全新的风味，比如日晒豆常见的莓果风味，但是，很多时候，日晒豆也会伴有一些令人不悦的杂味，诸如泥土、过度发酵等稍显野性的风味。</p>
+              <p><b>水洗处理法：</b>需要将新鲜的咖啡果实拨除果肉在净水中浸泡发酵，之后用大量清水冲洗从而去除生豆表面的杂质。因此，水洗处理的生豆有着更加“干净”的特质。同时，水洗豆往往酸度更高，复杂度也稍好。</p>
+              <p><b>混合式处理法：</b>除了常见的日晒与水洗，咖啡生豆还的处理方式还有去果皮日晒法、蜜处理法、半水洗处理法，这些方式都会不同程度的提升咖啡的甜味、酸味与浓郁度。</p>
+            </div>
+
+            <div class="tags-area d-flex align-items-center justify-content-between">
+              <div class="post-tags">
+                <a href="#">咖啡豆种类</a>
+                <a href="#">咖啡工艺</a>
+                <a href="#">咖啡豆处理方法</a>
+              </div>
+              <div class="share-items">
+                <ul class="post-social-icons list-unstyled">
+                  <li class="social-icons-head">分享：</li>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- post-body end -->
+        </div><!-- post content end -->
+
+        <div class="author-box d-nlock d-sm-flex">
+          <div class="author-img mb-4 mb-md-0">
+            <img loading="lazy" src="{{url_for('static', filename='images/journals/author_1.jpeg')}}" alt="author">
+          </div>
+          <div class="author-info">
+            <h3>石磊<span>专栏作者</span></h3>
+            <p class="mb-2">生活在你身边的咖啡大师</p>
+            <p class="author-url mb-0">更多文章: <span><a href="https://tastespirit.com/p/author/lei-shi/">https://tastespirit.com</a></span></p>
+
+          </div>
+        </div> <!-- Author box end -->
+
+        <!-- Post comment start -->
+        <div id="comments" class="comments-area">
+          <h3 class="comments-heading">07 Comments</h3>
+
+          <ul class="comments-list">
+            <li>
+              <div class="comment d-flex">
+                <img loading="lazy" class="comment-avatar" alt="author" src="{{url_for('static', filename='images/journals/comment_1.jpeg')}}">
+                <div class="comment-body">
+                  <div class="meta-data">
+                    <span class="comment-author mr-3">飞翔的企鹅</span>
+                    <span class="comment-date float-right">1月17日, 2022 下午1:38</span>
+                  </div>
+                  <div class="comment-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
+                  </div>
+                  <div class="text-left">
+                    <a class="comment-reply font-weight-bold" href="#">回复评论</a>
+                  </div>
+                </div>
+              </div><!-- Comments end -->
+
+              <ul class="comments-reply">
+                <li>
+                  <div class="comment d-flex">
+                    <img loading="lazy" class="comment-avatar" alt="author" src="{{url_for('static', filename='images/journals/comment_2.png')}}">
+                    <div class="comment-body">
+                      <div class="meta-data">
+                        <span class="comment-author mr-3">爱喝拿铁的小吴</span>
+                        <span class="comment-date float-right">7月29日, 2022 上午9:07</span>
+                      </div>
+                      <div class="comment-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
+                      </div>
+                      <div class="text-left">
+                        <a class="comment-reply font-weight-bold" href="#">回复评论</a>
+                      </div>
+                    </div>
+                  </div><!-- Comments end -->
+                </li>
+              </ul><!-- comments-reply end -->
+              <div class="comment d-flex last">
+                <img loading="lazy" class="comment-avatar" alt="author" src="{{url_for('static', filename='images/journals/comment_3.png')}}">
+                <div class="comment-body">
+                  <div class="meta-data">
+                    <span class="comment-author mr-3">只喝冰美式</span>
+                    <span class="comment-date float-right">12月25日, 2022 下午6:23</span>
+                  </div>
+                  <div class="comment-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
+                  </div>
+                  <div class="text-left">
+                    <a class="comment-reply font-weight-bold" href="#">回复评论</a>
+                  </div>
+                </div>
+              </div><!-- Comments end -->
+            </li><!-- Comments-list li end -->
+          </ul><!-- Comments-list ul end -->
+        </div><!-- Post comment end -->
+
+        <div class="comments-form border-box">
+          <h3 class="title-normal">留下你的评论...</h3>
+
+          <form role="form">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="message"><textarea class="form-control required-field" id="message" placeholder="在此写下你的评论..." rows="10" required></textarea></label>
+                </div>
+              </div><!-- Col 12 end -->
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="name"><input class="form-control" name="name" id="name" placeholder="用户名" type="text" required></label>
+                </div>
+              </div><!-- Col 4 end -->
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="email"><input class="form-control" name="email" id="email" placeholder="邮箱地址" type="email" required></label>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="website"><input class="form-control" id="website" placeholder="联系方式" type="text" required></label>
+                </div>
+              </div>
+
+            </div><!-- Form row end -->
+            <div class="clearfix">
+              <button class="btn btn-primary" type="submit" aria-label="post-comment">发布评论</button>
+            </div>
+          </form><!-- Form end -->
+        </div><!-- Comments form end -->
+      </div><!-- Content Col end -->
+
+      <div class="col-lg-4">
+
+        <div class="sidebar sidebar-right">
+          <div class="widget recent-posts">
+            <h3 class="widget-title">最新手记</h3>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center">
+                <div class="posts-thumb">
+                  <a href="#"><img loading="lazy" alt="img" src="{{url_for('static', filename='images/journals/journal_1.jpg')}}"></a>
+                </div>
+                <div class="post-info">
+                  <h4 class="entry-title">
+                    <a href="#">从一颗豆子到一杯咖啡，你需要的咖啡知识都在这里</a>
+                  </h4>
+                </div>
+              </li><!-- 1st post end-->
+
+              <li class="d-flex align-items-center">
+                <div class="posts-thumb">
+                  <a href="#"><img loading="lazy" alt="img" src="{{url_for('static', filename='images/journals/journal_2.jpg')}}"></a>
+                </div>
+                <div class="post-info">
+                  <h4 class="entry-title">
+                    <a href="#">冷萃咖啡的做法 | 最懒的人也能成功的秘诀</a>
+                  </h4>
+                </div>
+              </li><!-- 2nd post end-->
+
+              <li class="d-flex align-items-center">
+                <div class="posts-thumb">
+                  <a href="#"><img loading="lazy" alt="img" src="{{url_for('static', filename='images/journals/journal_3.jpg')}}"></a>
+                </div>
+                <div class="post-info">
+                  <h4 class="entry-title">
+                    <a href="#">新手必看！咖啡豆如何选？咖啡豆种类产地介绍大揭秘</a>
+                  </h4>
+                </div>
+              </li><!-- 3rd post end-->
+
+            </ul>
+
+          </div><!-- Recent post end -->
+
+
+          <div class="widget widget-tags">
+            <h3 class="widget-title">按关键词分类 </h3>
+
+            <ul class="list-unstyled">
+              <li><a href="#">咖啡豆</a></li>
+              <li><a href="#">美式</a></li>
+              <li><a href="#">冷萃</a></li>
+              <li><a href="#">咖啡机</a></li>
+              <li><a href="#">拿铁</a></li>
+              <li><a href="#">手冲咖啡</a></li>
+            </ul>
+          </div><!-- Tags end -->
+
+
+        </div><!-- Sidebar end -->
+      </div><!-- Sidebar Col end -->
+
+    </div><!-- Main row end -->
+
+  </div><!-- Conatiner end -->
+</section><!-- Main container end -->
+
+{% endblock %}
